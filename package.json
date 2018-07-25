@@ -1,0 +1,14 @@
+{
+  "name": "speckle-js",
+  "version": "0.0.0",
+  "description": "A Javascript Speckle Client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
