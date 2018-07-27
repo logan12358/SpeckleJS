@@ -10,7 +10,6 @@ To install SpeckleJS with npm, add the following to your `package.json`:
 "dependencies": {
   "speckle-js": "logan12358/SpeckleJS"
 }
-}
 ```
 
 ## Usage
@@ -23,7 +22,7 @@ const Client = require('SpeckleJS')
 let client = new Client('https://your.server.url/api/v1', 'YOUR JWT TOKEN')
 ```
 
-Then, use the client to do fun things:
+Then, use the client to do fun things (disclaimer, I haven't tested this example yet):
 
 ```javascript
 client.streams.getAll()                         // Get all streams
@@ -38,7 +37,8 @@ client.streams.getAll()                         // Get all streams
 Lots of things:
 - Implement all endpoints in the Speckle spec
 - Work out how to best expost the `/accounts` endpoints
-- Implement websockets nicely (maybe using `isomorphic-ws`?)
+- Do some processing for common response formats (i.e. maybe pull out `response` or `responses` if applicable)
+- Implement websockets nicely (maybe using `isomorphic-ws` or similar?)
 - Add linting to the repo (probably in line with the rest of Speckle)
 - Work out how to write tests appropriately (and actually write them)
 - Add documentation
